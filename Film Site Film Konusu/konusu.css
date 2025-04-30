@@ -1,0 +1,142 @@
+body {
+  background-image: url(interssss.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 200vh;
+  margin: 0;
+  padding-top: 100px; /* Navigasyon çubuğu yüksekliği */
+  overflow-y: scroll;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 370px;
+  width: 60%;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  border-radius: 16px;
+  flex-direction: column; /* İçerikleri dikey düzenler */
+  align-items: center; /* İçerikleri yatayda ortalar */
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+nav ul {
+  list-style: none; /* Madde işaretlerini kaldırır */
+  display: flex;
+  gap: 10px; /* Menü öğeleri arasına boşluk ekler */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+nav ul li {
+  padding: 6px 40px;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease; /* Yumuşak geçişler */
+  background-color: white;
+  opacity: 0.9;
+}
+
+nav ul li:hover {
+  transform: translateY(-3px); /* Yavaşça yukarıya kayma efekti */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+}
+
+.logo {
+  position: fixed;
+  bottom: -12px;
+  left: -2px;
+  height: 90px;
+}
+h2 {
+  text-align: center;
+  margin: 2% auto;
+  max-width: 80%;
+  margin-top: 32px;
+  margin-left: 190px;
+  font-size: 24px;
+  font-family: "Lora", serif;
+  color: #000000;
+  padding: 10px 20px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  border-radius: 16px;
+  background-color: white;
+  animation: fadeIn 0.5s ease-in-out;
+  opacity: 0.7;
+  transition: all 0.3s ease; /* Düğme etkileşimi için yumuşak geçiş */
+}
+h2:hover {
+  transform: scale(1.05); /* Butonu büyüt */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Daha belirgin gölge */
+}
+
+p {
+  text-align: center;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  margin: 1% auto;
+  max-width: 80%;
+  font-size: 18px;
+  color: #000000;
+  padding: 10px 20px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  font-family: "Georgia", serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.video-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+video {
+  width: 80%;
+  height: auto;
+  margin-right: 6px;
+  border-radius: 16px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+video:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0.7;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0.7;
+  }
+}

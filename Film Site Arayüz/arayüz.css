@@ -1,0 +1,260 @@
+body {
+  background-image: url(interssss.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+  display: flex;
+  align-items: start;
+}
+
+h2 {
+  color: #fff;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 40px;
+  font-family: "Arial", sans-serif;
+  padding: 30px;
+  position: relative;
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  border-radius: 20px;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7),
+    0 0 30px rgba(255, 255, 255, 0.5);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Işıkla uyumlu gölge */
+  transition: all 0.3s ease-in-out;
+}
+
+h2:hover {
+  transform: scale(1.05); /* Hover'da başlığı büyüt */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Gölgeyi büyüt */
+}
+
+h2::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  border-radius: 20px;
+  z-index: -1;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient() url();
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 370px;
+  width: 60%;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  border-radius: 16px;
+  flex-direction: column; /* İçerikleri dikey düzenler */
+  align-items: center; /* İçerikleri yatayda ortalar */
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+nav ul {
+  list-style: none; /* Madde işaretlerini kaldırır */
+  display: flex;
+  gap: 10px; /* Menü öğeleri arasına boşluk ekler */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+}
+
+nav ul li {
+  padding: 6px 40px;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease; /* Yumuşak geçişler */
+  background-color: white;
+  opacity: 0.9;
+}
+
+nav ul li:hover {
+  transform: translateY(-3px); /* Yavaşça yukarıya kayma efekti */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+}
+
+.logo {
+  position: fixed;
+  bottom: -12px;
+  left: -2px;
+  height: 90px;
+}
+h2 {
+  text-align: center;
+  margin: auto;
+  max-width: 80%;
+  font-size: 24px;
+  font-family: "Lora", serif;
+  color: #000000;
+  padding: 10px 20px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  border-radius: 16px;
+  background-color: white;
+  animation: fadeIn 0.5s ease-in-out;
+  opacity: 0.7;
+  transition: all 0.3s ease; /* Düğme etkileşimi için yumuşak geçiş */
+}
+
+p {
+  text-align: center;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  margin: 1% auto;
+  max-width: 80%;
+  font-size: 18px;
+  color: #000000;
+  padding: 10px 20px;
+  border-radius: 16px;
+  font-family: "Georgia", serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.music-player {
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+audio {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(to right, #4facfe, #00f2fe);
+  width: 100%;
+  z-index: 1000; /* Diğer öğelerin üzerinde görünmesi için */
+}
+
+.form-container {
+  background: #f4f9ff;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  padding: 30px;
+  width: 350px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Animasyon ekledik */
+  place-items: center;
+  position: absolute; /* Pozisyonu mutlak yapıyoruz */
+  top: 50%; /* Sayfanın %50 yukarıdan */
+  left: 50%; /* Sayfanın %50 solundan */
+  transform: translate(-50%, -50%); /* Konumunu tam ortalamak için */
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+label {
+  font-weight: bold;
+  color: #fffafa;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+input:focus {
+  border-color: #4facfe; /* Odaklanıldığında renk değişir */
+  outline: none;
+  box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+}
+
+button {
+  background: linear-gradient(to right, #4facfe, #00f2fe); /* Gradient buton */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #00f2fe, #4facfe);
+  transform: scale(1.05); /* Buton büyür */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.snow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* Kar tanelerinin üzerine tıklanmasını engeller */
+  z-index: 9999; /* Kar katmanının diğer tüm içeriklerin üzerinde olmasını sağlar */
+  opacity: 0.8; /* Karın saydamlığı */
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px; /* Kar taneleri üstten başlasın */
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  opacity: 0.8;
+  animation: fall linear infinite; /* Kar tanelerinin düşüş animasyonu */
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(
+      100vh
+    ); /* Kar taneleri sayfa yüksekliği kadar düşer */
+    opacity: 0.5;
+  }
+}

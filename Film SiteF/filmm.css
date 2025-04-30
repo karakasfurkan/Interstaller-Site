@@ -1,0 +1,326 @@
+body {
+  background-image: url(interssss.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Boşlukları düzenler */
+  min-height: 150vh; /* Görüntü yüksekliği kadar yapar */
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 370px;
+  width: 60%;
+  z-index: 1000;
+  padding: 10px 20px;
+  display: flex;
+  border-radius: 16px;
+  flex-direction: column; /* İçerikleri dikey düzenler */
+  align-items: center; /* İçerikleri yatayda ortalar */
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(8px);
+}
+
+nav ul {
+  list-style: none; /* Madde işaretlerini kaldırır */
+  display: flex;
+  gap: 10px; /* Menü öğeleri arasına boşluk ekler */
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: #000000;
+  font-weight: bold;
+}
+
+nav ul li {
+  padding: 6px 25px;
+  font-size: 18px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease; /* Yumuşak geçişler */
+  background-color: white;
+  opacity: 0.9;
+}
+
+nav ul li:hover {
+  transform: translateY(-3px); /* Yavaşça yukarıya kayma efekti */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Daha belirgin gölge */
+}
+
+.logo {
+  position: fixed;
+  bottom: -12px;
+  left: -2px;
+  height: 90px;
+}
+
+h4 {
+  margin-top: 80px;
+  text-align: center;
+  border-radius: 16px;
+  color: black;
+  opacity: 0.7;
+  animation: fadeIn 0.5s ease-in-out;
+}
+h2 {
+  text-align: center;
+  margin: 2% auto;
+  max-width: 97.2%;
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: "Lora", serif;
+  color: #000000;
+  padding: 10px 20px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  border-radius: 16px;
+  background-color: white;
+  animation: fadeIn 0.5s ease-in-out;
+  opacity: 0.7;
+  transition: all 0.3s ease; /* Düğme etkileşimi için yumuşak geçiş */
+}
+h2:hover {
+  transform: scale(1.05); /* Butonu büyüt */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Daha belirgin gölge */
+}
+h2:active {
+  transform: scale(0.95); /* Hafif geri çekilme efekti */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Gölgeyi küçült */
+}
+
+h3 {
+  padding: 10px 20px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  border-radius: 16px;
+  background-color: white;
+  animation: fadeIn 0.5s ease-in-out;
+  opacity: 0.7;
+  transition: all 0.3s ease; /* Düğme etkileşimi için yumuşak geçiş */
+}
+h3:hover {
+  transform: scale(1.05); /* Butonu büyüt */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Daha belirgin gölge */
+}
+h3:active {
+  transform: scale(0.95); /* Hafif geri çekilme efekti */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Gölgeyi küçült */
+}
+
+p {
+  text-align: center;
+  font-family: "Lora", serif;
+  font-weight: 500;
+  margin: 1% auto;
+  max-width: 80%;
+  font-size: 18px;
+  color: #000000;
+  padding: 10px 20px;
+  box-shadow: 0px 20px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  font-family: "Georgia", serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+p:hover {
+  transform: scale(1.05); /* Butonu büyüt */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Daha belirgin gölge */
+}
+p:active {
+  transform: scale(0.95); /* Hafif geri çekilme efekti */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Gölgeyi küçült */
+}
+.video-grid {
+  display: grid; /* Grid düzeni */
+  grid-template-columns: repeat(2, 1fr); /* 2 sütunlu grid */
+  gap: 60px; /* Hücreler arasındaki boşluk */
+  padding: 20px; /* Genel padding */
+}
+
+.video-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100%; /* Video genişliği */
+  height: auto; /* Video yüksekliği oranlı */
+  border-radius: 10px; /* Köşeleri yuvarlak yapar */
+  box-shadow: 0px 20px 20px black;
+  animation: fadeIn 0.5s ease-in-out;
+  transition: transform 0.3s ease;
+}
+video:hover {
+  transform: scale(1.1);
+}
+
+a.active {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.custom-button2 {
+  background-color: #2f83c9; /* Butonun arka plan rengi */
+  border: none;
+  border-radius: 16px; /* Köşeleri yuvarlaklaştırır */
+  padding: 6px 25px; /* Düğmenin iç boşlukları */
+  font-size: 18px; /* Yazı tipi boyutu */
+  font-family: "Arial", sans-serif; /* Yazı tipi */
+  color: white; /* Yazı rengi */
+  text-align: center;
+  text-decoration: none; /* Bağlantı altını çizmeyi engeller */
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Düğme etkileşimi için yumuşak geçiş */
+}
+
+/* Hover (Üzerine Gelme) Efekti */
+.custom-button2:hover {
+  /* Gradient ton değişikliği */
+  transform: scale(1.05); /* Butonu büyüt */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4); /* Daha belirgin gölge */
+}
+
+/* Aktif (Tıklama Anı) Efekti */
+.custom-button2:active {
+  transform: scale(0.95); /* Hafif geri çekilme efekti */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Gölgeyi küçült */
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1a1a1a; /* Arka plan rengi (koyu tonlar) */
+}
+
+/* Footer Genel Ayarları */
+.animated-footer {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.8); /* Hafif şeffaf beyaz arka plan */
+  backdrop-filter: blur(10px); /* Arka plan bulanıklığı */
+  color: #000; /* Siyah yazı rengi */
+  padding: 10px 0;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed; /* Sayfanın alt kısmına sabitle */
+  bottom: -100%; /* Başlangıçta gizle */
+  left: 0;
+  z-index: 10; /* Üstte görünmesi için */
+  transition: bottom 0.3s ease; /* Yumuşak geçiş */
+}
+
+.footer-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+  text-align: center;
+  animation: fadeIn 1s ease-in-out; /* Animasyon ekle */
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-right: 80px;
+  color: #000;
+}
+
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  margin: 5px 0;
+  color: #000; /* Siyah yazı */
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #007bff; /* Link hover rengi */
+  transition: color 0.3s ease; /* Yumuşak geçiş efekti */
+}
+
+.footer-section input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 80%;
+  color: #000;
+  background-color: #fff;
+  transition: transform 0.3s ease; /* Input hover animasyonu */
+}
+
+.footer-section input:hover {
+  transform: scale(1.05); /* Hafif büyütme efekti */
+}
+
+.footer-section button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.footer-section button:hover {
+  background: #0056b3;
+  transform: scale(1.05); /* Hafif büyütme efekti */
+}
+
+.social-icons a {
+  font-size: 20px;
+  margin: 0 10px;
+  color: #000;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Footer Alt Kısmı */
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 20px;
+  color: #555;
+  animation: slideUp 1s ease-in-out; /* Alt kısım için animasyon */
+}
+
+/* Animasyonlar */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
